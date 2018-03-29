@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Profile')
+
 @section('header')
 <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -116,10 +118,10 @@
                                 <div class="col-md-8 col-md-offset-4">
                                     <div class="row">
                                        <div class="col-md-6">
-                                            <button type="submit" class="btn btn-primary btn-block" ng-click="changeProfile({{Auth::user()->id}})">Save</button>
+                                            <button type="submit" class="btn btn-primary btn-block" ng-click="changeProfile({{Auth::user()->id}})"><i class="fa fa-paper-plane"></i> Save</button>
                                        </div>
                                        <div class="col-md-6">
-                                          <button class="btn btn-danger btn-block" ng-click="hideProfile()">cancel</button>
+                                          <button class="btn btn-danger btn-block" ng-click="hideProfile()"><i class="fa fa-arrow-left"></i> cancel</button>
                                        </div>
                                    </div>
                                 </div>
@@ -161,10 +163,10 @@
                                 <div class="col-md-8 col-md-offset-4">
                                    <div class="row">
                                        <div class="col-md-6">
-                                            <button class="btn btn-primary btn-block" ng-click="changePassword({{Auth::user()->id}})">Save</button>
+                                            <button class="btn btn-primary btn-block" ng-click="changePassword({{Auth::user()->id}})"><i class="fa fa-paper-plane"></i> Save</button>
                                        </div>
                                        <div class="col-md-6">
-                                           <button class="btn btn-danger btn-block" ng-click="hidePassword()">cancel</button>
+                                           <button class="btn btn-danger btn-block" ng-click="hidePassword()"><i class="fa fa-arrow-left"></i> cancel</button>
                                        </div>
                                    </div>
                                 </div>

@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Dashboard')
+
 @section('header')
 <nav class="navbar navbar-default navbar-static-top">
             <div class="container">

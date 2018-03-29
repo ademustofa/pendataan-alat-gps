@@ -23,10 +23,17 @@
 
         .navbar-right .dropdown-menu li{
         	padding: 5px;
+
         	a{
-        		padding: 5px;
+        		padding: 5px 5px 5px 10px;
         		font-size: 1.1em;
+
+        		&:hover{
+					border-radius: 5px;
+        		}
+
         	}
+
         }
 }
 
@@ -70,4 +77,10 @@ img{
 	&:hover{
 	transform: scale(2.5);
 	}
+}
+
+.panel-heading{
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bolder;
 }

@@ -3076,8 +3076,12 @@
 }
 
 .navbar .navbar-right .dropdown-menu li a {
-  padding: 5px;
+  padding: 5px 5px 5px 10px;
   font-size: 1.1em;
+}
+
+.navbar .navbar-right .dropdown-menu li a:hover {
+  border-radius: 5px;
 }
 
 #loginForm {
@@ -3124,5 +3128,11 @@ img {
 img:hover {
   -webkit-transform: scale(2.5);
           transform: scale(2.5);
+}
+
+.panel-heading {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bolder;
 }
 

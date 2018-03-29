@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Manage User')
+
 @section('header')
 <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -98,8 +100,8 @@
                             <br>
                             <div class="form-group">
                               <div class="col-md-8 col-md-offset-4">
-                                    <button type="submit" class="btn btn-primary" ng-click="addDataUser()">Save</button>
-                                    <button class="btn btn-danger" ng-click="hideAddform()">Cancel</button>
+                                    <button type="submit" class="btn btn-primary" ng-click="addDataUser()"><i class="fa fa-paper-plane"></i> Save</button>
+                                    <button class="btn btn-danger" ng-click="hideAddform()"><i class="fa fa-arrow-left"></i> Cancel</button>
                               </div>
                             </div>
                         </form>
@@ -128,8 +130,8 @@
                             <br>
                             <div class="form-group">
                               <div class="col-md-8 col-md-offset-4">
-                                    <button type="submit" class="btn btn-primary" ng-click="updateDataUser()">Save</button>
-                                    <button class="btn btn-danger" ng-click="hideUpdateform()">Cancel</button>
+                                    <button type="submit" class="btn btn-primary" ng-click="updateDataUser()"><i class="fa fa-paper-plane"></i> Save</button>
+                                    <button class="btn btn-danger" ng-click="hideUpdateform()"><i class="fa fa-arrow-left"></i> Cancel</button>
                               </div>
                             </div>
                         </form>
