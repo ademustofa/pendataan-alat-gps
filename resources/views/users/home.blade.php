@@ -40,7 +40,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
-                                     <li><a href="/profile">Profile</a></li>
+                                     <li><a href="/profile"><i class="fa fa-address-book"></i> Profile</a></li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();

@@ -27,7 +27,7 @@ Route::get('/getDataGps', 'HomeController@getAllGps');
 Route::post('/createData', 'HomeController@createGps');
 Route::post('/updateData', 'HomeController@updateGps');
 Route::delete('/deleteDataGps/{id}', 'HomeController@deleteGps');
-/*Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logout');*/
+Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 
 
 

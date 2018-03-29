@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Login Admin')
+
 @section('content')
 <div id="particles-js"></div>
 <div class="container">

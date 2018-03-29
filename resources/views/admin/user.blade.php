@@ -43,7 +43,7 @@
                                 <ul class="dropdown-menu" role="menu">
                                   <!--   <li><a href="/profile">Profile</a></li> -->
                                     <li>
-                                        <a href="{{ route('logout') }}"
+                                        <a href="{{ route('admin.logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                              <i class="fa fa-sign-out"></i> Logout
