@@ -15,14 +15,14 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/home') }}">
-                        Dashboard
+                       <i class="fa fa-dashboard"></i> Dashboard
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li><a href="{{ url('/data-gps') }}">Manage GPS</a></li>
+                        <li><a href="{{ url('/data-gps') }}"><i class="fa fa-cubes"></i>  Manage GPS</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -205,12 +205,12 @@
             });
         }
 
-        $scope.hideProfile = () =>{
+        $scope.hideProfile = () => {
             $scope.formProfile = false;
             $scope.myProfile = true;
         }
 
-        $scope.hidePassword = () =>{
+        $scope.hidePassword = () => {
             $scope.formPassword = false;
             $scope.myProfile = true;
         }
@@ -255,9 +255,9 @@
 
         $scope.new = {};
         $scope.changePassword = id => {
-            console.log($scope.new);
+           /* console.log($scope.new);*/
 
-
+            // Check if new password match with retype password
             if ($scope.new.newPassword != $scope.new.retypePassword) {
                 swal(
                   'Error!',
@@ -270,7 +270,7 @@
                     newPassword : $scope.new.newPassword
                 }
 
-                $http.post('/changePassword', data).then(function successCallback(){
+                $http.post('/changePassword', data).then(() => {
                     swal(
                       'Success!',
                       'Password was successfully updated!',
@@ -280,12 +280,6 @@
                     $scope.new = {};
                     $scope.formPassword = false;
                     $scope.myProfile = true;
-                }, function errorCallback(response){
-                    swal(
-                      'Error!',
-                      'Old password does not match',
-                      'error'
-                    )   
                 })
             }
         }

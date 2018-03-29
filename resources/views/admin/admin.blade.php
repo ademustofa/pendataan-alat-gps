@@ -15,15 +15,15 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/admin') }}">
-                       Dashboard
+                       <i class="fa fa-dashboard"></i> Dashboard
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li><a href="/admin/users">User</a></li>
-                        <li><a href="/admin/manage-gps">Manage Gps</a></li>
+                        <li><a href="/admin/users"><i class="fa fa-users"></i> User</a></li>
+                        <li><a href="/admin/manage-gps"><i class="fa fa-cubes"></i> Manage Gps</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -73,7 +73,7 @@
                         </div>
                     @endif
 
-                    You are logged in as admin
+                    Hi <strong>Admin</strong>! welcome to dashboard page
                 </div>
             </div>
         </div>
